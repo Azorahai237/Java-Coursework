@@ -24,6 +24,8 @@ public class Track {
     readFile(filename);
   }
   public void readFile(String filename) throws IOException{
+    //deleting old data
+    PointList.clear();
     //creating file object and error checking for whether file exists
     File FileData = new File(filename);
     if (FileData.exists() != true){
@@ -55,7 +57,6 @@ public class Track {
 
       //creating new point from values and adding to list
       Point NewPoint = new Point(Time, Longitude, Latitude, Elevation);
-      System.out.printf("Point created");
       PointList.add(NewPoint);
     }
     Reader.close();
