@@ -148,12 +148,3 @@ public class Track {
     return AverageSpeed;
   }
 }
-
-class TestTrack{
-  public static void main(String[] Args) throws IOException {
-    Track t1 = new Track("data/test.csv");
-    
-
-    
-  }
-}
