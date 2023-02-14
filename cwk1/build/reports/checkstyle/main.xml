@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.45.1">
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/ConvertToKML.java">
+</file>
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/ElevationPlot.java">
+</file>
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/GPSException.java">
+</file>
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/PlotApplication.java">
+</file>
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/Point.java">
+<error line="67" severity="warning" message="Line is longer than 100 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/Track.java">
+<error line="9" column="17" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="14" column="20" severity="warning" message="Name &apos;PointList&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+<error line="14" column="20" severity="warning" message="Variable &apos;PointList&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="28" column="10" severity="warning" message="Name &apos;FileData&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="29" column="27" severity="warning" message="Expression can be simplified." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
+<error line="34" column="13" severity="warning" message="Name &apos;Reader&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="40" column="14" severity="warning" message="Name &apos;LineValue&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="49" column="21" severity="warning" message="Name &apos;Time&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="50" column="14" severity="warning" message="Name &apos;Longitude&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="51" column="14" severity="warning" message="Name &apos;Latitude&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="52" column="14" severity="warning" message="Name &apos;Elevation&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+<error line="56" column="13" severity="warning" message="Name &apos;NewPoint&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
+</file>
+<file name="/mnt/c/Java Coursework/cwk1/src/main/java/TrackInfo.java">
+</file>
+</checkstyle>
