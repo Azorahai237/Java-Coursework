@@ -5,7 +5,9 @@
  */
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.FileWriter;
 import java.util.*;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
@@ -147,5 +149,35 @@ public class Track {
     //calculating average speed
     double AverageSpeed = distance / SecondsBetween;
     return AverageSpeed;
+  }
+
+  public void writeKML(String filename) throws IOException{
+    FileWriter kmlfile = new FileWriter(filename);
+    kmlfile.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>"); 
+    kmlfile.write("<kml xmlns=\"http://earth.google.com/kml/2.0\"> <Document>");
+    kmlfile.write("<Placemark>"); 
+    kmlfile.write("<LineString>");
+    kmlfile.write("<altitudeMode>clampToGround</altitudeMode>");
+    kmlfile.write("<tessellate>1</tessellate>");
+    kmlfile.write("<coordinates>");
+    for (Point point : PointList) {
+      double lon = point.getLongitude();
+      double lat = point.getLatitude();
+      String strlon = Double.toString(lon);
+      String strlat = Double.toString(lat);
+      kmlfile.write(strlon+","+strlat+"\n");
+    }
+    kmlfile.write("</coordinates>");
+    kmlfile.write("</LineString>");
+    kmlfile.write("<Style>");
+    kmlfile.write("<LineStyle>"); 
+    kmlfile.write("<color>#ff0000ff</color>");
+    kmlfile.write("<width>5</width>");
+    kmlfile.write("</LineStyle>"); 
+    kmlfile.write("</Style>");
+    kmlfile.write("</Placemark>");
+    kmlfile.write("</Document>");
+    kmlfile.write("</kml>");
+    kmlfile.close();
   }
 }
